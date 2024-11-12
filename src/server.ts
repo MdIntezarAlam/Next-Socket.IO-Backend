@@ -19,7 +19,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
     cors: {
-        origin: "*", //all
+        origin: "https://dev-chatme.netlify.app/", //all
     },
 });
 
