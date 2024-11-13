@@ -11,6 +11,10 @@ dotenv.config()
 connectDB()
 
 
+const allowOrigin = [
+    "https://dev-chatme.netlify.app/",
+    "https://chatme-qulw.onrender.com/"
+]
 
 const app = express();
 app.use(express.json());
@@ -20,7 +24,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
     cors: {
-        origin: "https://dev-chatme.netlify.app/", //all
+        origin: allowOrigin
     },
 });
 
