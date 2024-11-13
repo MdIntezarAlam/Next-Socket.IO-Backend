@@ -5,16 +5,15 @@
   "type": "commonjs",
   "main": "server.ts",
   "scripts": {
-    "start": "node src/server.ts",
+    "start": "node dist/server.js",
     "dev": "nodemon --exec \"npx ts-node\" src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chat-server": "link:",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "mongoose": "^8.7.2",
@@ -24,6 +23,7 @@
     "@types/express": "^5.0.0",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.7.7",
+    "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
