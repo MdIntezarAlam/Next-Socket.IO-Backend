@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      chat-server:
-        specifier: 'link:'
-        version: 'link:'
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
