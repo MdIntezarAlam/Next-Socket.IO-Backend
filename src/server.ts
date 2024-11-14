@@ -9,9 +9,8 @@ import cors from 'cors'
 dotenv.config()
 connectDB()
 const app = express();
-
-
 const allowOrigin = [
+    "http://localhost:3000",
     "https://dev-chatme.netlify.app/",
     "https://chatme-qulw.onrender.com/"
 ]
@@ -24,9 +23,9 @@ const corsOptions = {
             callback(new Error("Not allowed by CORS"));
         }
     },
-    // credentials: true,
-    // methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    // allowedHeaders: ['Content-Type', 'Authorization'],
+    //credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    ///  allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
 
